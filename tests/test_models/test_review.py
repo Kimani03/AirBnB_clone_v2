@@ -27,3 +27,9 @@ class test_review(test_basemodel):
         """ """
         new = self.value()
         self.assertEqual(type(new.text), str)
+
+    def test_text(self):
+        """ """
+        new = self.value()
+        new.text = "A good summer vaccation spot"
+        self.assertEqual(type(new.text), str)
